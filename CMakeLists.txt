@@ -87,8 +87,8 @@ OPTION(QTONLY "ONLY USE QT-ONLY FEATURES" OFF)
 #### FIND REQUIRED PACKAGES ####
 ################################
 
-FIND_PACKAGE(Qt5Widgets REQUIRED)
-FIND_PACKAGE(Qt5LinguistTools REQUIRED)
+FIND_PACKAGE(Qt5Widgets 5.2 REQUIRED)
+FIND_PACKAGE(Qt5LinguistTools 5.2 REQUIRED)
 
 # Instead of having a hardcoded path for GraphicsMagick, we use a FindMagick.cmake file to search for it
 SET(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake" ${CMAKE_MODULE_PATH})
